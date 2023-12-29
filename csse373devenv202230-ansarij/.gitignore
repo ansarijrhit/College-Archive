@@ -1,0 +1,23 @@
+# Compiled source #
+###################
+*.obj
+*.db
+*.pdb
+*.ipch
+*.pch
+*.log
+*.exe
+Debug/
+Release/
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# VS random temp stuff #
+###################
+**/.vs/**
+*.user
