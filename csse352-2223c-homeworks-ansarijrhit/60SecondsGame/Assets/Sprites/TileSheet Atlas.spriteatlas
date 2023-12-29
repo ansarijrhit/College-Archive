@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TileSheet Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+    totalSpriteSurfaceArea: 5420
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -5960618507970338917, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -8992702112789220695, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -2374047007104820766, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -74190425550410269, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -1921732041667983013, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 5466191088614791918, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -3797401419902722516, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 1294786723225932075, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -8214041153586509599, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 2849730303307528645, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 1641872027996137565, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -3032790282715393777, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -6609986114380940386, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -5507942494293001542, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -2932742098559850692, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 5005679780582531064, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 1738467299532483907, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 7987534627137561783, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -3204162399642744818, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -6626545305536997207, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -2219421621729703495, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -7098025345847822568, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: 46097893258781529, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -3607141215718513491, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  - {fileID: -1681823103513194223, guid: 25c4be31c89430843ac4320fe2290956, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Wood 1
+  - Red Brick 2
+  - Red Brick 1
+  - TileSheet_21
+  - TileSheet_20
+  - TileSheet_23
+  - TileSheet_22
+  - TileSheet_24
+  - Water
+  - Lava 1
+  - Lava 2
+  - Sewer Water
+  - TileSheet_18
+  - TileSheet_19
+  - TileSheet_13
+  - Dark Brick 1
+  - TileSheet_14
+  - Dark Brick 2
+  - TileSheet_15
+  - TileSheet_16
+  - TileSheet_17
+  - Medium Brick 1
+  - Medium Brick 2
+  - Light Wood 1
+  - Light Wood 2
+  m_RenderDataMap: {}
+  m_Tag: TileSheet Atlas
+  m_IsVariant: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce68be3f27eec440b0c248f0887ff19, type: 3}
+  m_Name: Apartments
+  m_EditorClassIdentifier: 
+  playerX: -88
+  playerY: 22
+  maxCameraX: 75
+  maxCameraY: 21
+  minCameraX: -105
+  minCameraY: -36
+  squirrelSpawns:
+  - intArray: 8bffffff09000000
+  - intArray: a0fffffff3ffffff
+  - intArray: acfffffff3ffffff
+  - intArray: cdffffff14000000
+  - intArray: c6fffffffbffffff
+  - intArray: fbffffff12000000
+  - intArray: 25000000e7ffffff
+  - intArray: 4d0000000c000000
+  - intArray: 52000000e2ffffff
+  tilemap: {fileID: 2488658913911711409, guid: 9d14943da20d83f4ca9c98cf94c762e9, type: 3}
+  MailLocations: Scharpenberg Entrance,Apartments East Entrance,Apartments Main Entrance,Apartments
+    West Entrance

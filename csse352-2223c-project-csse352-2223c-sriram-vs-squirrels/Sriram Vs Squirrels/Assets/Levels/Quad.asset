@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce68be3f27eec440b0c248f0887ff19, type: 3}
+  m_Name: Quad
+  m_EditorClassIdentifier: 
+  playerX: 0
+  playerY: -2
+  maxCameraX: 105.1
+  maxCameraY: 21
+  minCameraX: -2
+  minCameraY: -148.7
+  squirrelSpawns:
+  - intArray: 6a0000000e000000
+  - intArray: 5b000000f6ffffff
+  - intArray: 6c000000f3ffffff
+  - intArray: 5a000000d8ffffff
+  - intArray: f2ffffff09000000
+  - intArray: 19000000f3ffffff
+  - intArray: 3c000000ebffffff
+  - intArray: 23000000ddffffff
+  - intArray: 05000000c6ffffff
+  - intArray: f5ffffffb5ffffff
+  - intArray: 1e000000b9ffffff
+  - intArray: 53000000adffffff
+  - intArray: 340000008affffff
+  - intArray: 5300000076ffffff
+  - intArray: 0c00000067ffffff
+  - intArray: f9ffffff76ffffff
+  tilemap: {fileID: -4950495903706451448, guid: 69f2fcd66965f8547aa9639ba16a88c3, type: 3}
+  MailLocations: Both Moench Entrances,Greenhouse,Hadley,Logan Library,Olin
