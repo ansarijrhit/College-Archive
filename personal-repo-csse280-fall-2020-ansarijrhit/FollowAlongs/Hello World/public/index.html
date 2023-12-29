@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Hello World</title>
+        <style>
+            div {
+                border: blue double 5px;
+            }
+            .test-class {
+                color:red;
+            }
+            #my-button {
+                background-color: coral;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hello, World!</h1>
+        <div>The div tag is the most popular tag</div>
+        <div>A div gets the whole line</div>
+        <div>because the display property is 'block'</div>
+        <br>
+        <br>
+        <br>
+        <span class = "test-class">The span tag is the next most popular</span>
+        <span>A span shares the line</span>
+        <span>because the display property is 'inline'</span>
+        <p class = "test-class" style ="font-size: 3em;">But with CSS you can do anything</p>
+        <button id = "my-button">Press me!</button>
+
+        <script>
+            console.log("Hello World");
+            document.querySelector("#my-button").onclick = (event) => {
+              console.log(event);
+              console.log(event.target);
+              alert("This is important!");  
+            };
+        </script>
+    </body>
+
+</html>

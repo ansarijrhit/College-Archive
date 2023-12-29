@@ -1,0 +1,75 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+    width: 342px;
+}
+
+.btn-mine, .btn-mine:hover, .btn-mine:focus {
+    flex-basis: 14%;
+    background-color: #343A40;
+    font-size: 1em;
+}
+
+
+.btn-new, .btn-new:hover, .btn-new:focus{
+    background-color: #800000;
+    color: white;
+    font-size: 1em;
+}
+
+
+main {
+    display: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-direction: row;
+    text-align: center; 
+}
+
+#header {
+    color: #343A40;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#footer {
+    display: flex;
+    margin-left: auto;
+    font-size: .5em;
+    margin-top: 30px;
+}
+
+@media (min-width: 576px){
+    #header, .btn-mine, .btn-mine:hover, .btn-mine:focus{
+        font-size: 1.5em;
+    }
+    #footer {
+        font-size: .75em;
+    }
+    .page-container {
+        width: 374px;
+    }
+}
+
+@media (min-width: 992px){
+    #header, .btn-mine, .btn-mine, .btn-mine:hover, .btn-mine:focus, .btn-new, .btn-new:hover, .btn-new:focus{
+        font-size: 2em;
+    }
+    #footer{
+        font-size: 1em;
+    }
+    .page-container {
+        width: 406px;
+    }
+}

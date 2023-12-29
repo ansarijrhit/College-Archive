@@ -1,0 +1,88 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #999999;
+}
+
+#dateContainer {
+    background-color: white;
+    border-color: black;
+    line-height: 100px;
+    text-align: center;
+    color: #800000;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1000px){
+    .smol{
+        display:none;
+    }
+    .med{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:768px){
+    .smol{
+        display:none;
+    }
+    
+    .yuge{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 574px){
+    .smol{
+        display:none;
+    }
+    
+    .yuge{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 574px) and (min-width:0px){
+    .med{
+        display:none;
+    }
+    .yuge{
+        display:none;
+    }
+}
+
+#century2, #decade2, #year2, #month2, #day2, #hour2 {
+    margin-bottom: 30px;
+}
+
+.btn-mine, .btn-mine:hover, .btn-mine:focus{
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-mine:active:focus {
+    background-color: #007BFF;
+    color: black;
+}
+
+.btn-reset, .btn-reset:hover, .btn-reset:focus{
+    background-color: #800000;
+    color: white;
+}
+
+.btn-reset:active:focus {
+    background-color: #800000;
+    color: black;
+}

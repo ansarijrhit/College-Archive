@@ -1,0 +1,78 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.btn-mine, .btn-mine:hover, .btn-mine:focus{
+    background-color: #800000;
+    color: white;
+}
+
+.btn-mine:active:focus {
+    background-color: #800000;
+    color: black;
+}
+
+.my-text {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#favoriteColorContainer {
+    width: 200px;
+    margin: 20px;
+}
+#favoriteColorBox {
+    background-color: #800000;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.btn-blue, .btn-blue:hover, .btn-blue:focus {
+    background-color: blue;
+    color: white;
+}
+.btn-blue:active:focus{
+    background-color: blue;
+    color: black;
+}
+.btn-green, .btn-green:hover, .btn-green:focus {
+    background-color: green;
+    color: white;
+}
+.btn-green:active:focus{
+    background-color: green;
+    color: black;
+}
+.btn-red, .btn-red:hover, .btn-red:focus {
+    background-color: red;
+    color: white;
+}
+.btn-red:active:focus{
+    background-color: red;
+    color: black;
+}
+.btn-purple, .btn-purple:hover, btn-purple:focus {
+    background-color: purple;
+    color: white;
+}
+.btn-purple:active:focus{
+    background-color: purple;
+    color: black;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*=col-]{
+    padding-right: 2px;
+    padding-left: 2px;
+}
