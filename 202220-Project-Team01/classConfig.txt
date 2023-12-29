@@ -1,0 +1,6 @@
+tests.JordanTests.ATestAdaptee
+tests.JordanTests.ATestAdapterStrong
+tests.JordanTests.ATestClientStrong
+tests.JordanTests.ATestTarget
+tests.JordanTests.TestClass1
+tests.JordanTests.TestClass2
