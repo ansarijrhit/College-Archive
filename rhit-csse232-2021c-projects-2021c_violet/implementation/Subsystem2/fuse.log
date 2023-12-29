@@ -1,0 +1,28 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/FullSubsystem_FullSubsystem_sch_tb_isim_beh.exe -prj C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/FullSubsystem_FullSubsystem_sch_tb_beh.prj work.FullSubsystem_FullSubsystem_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/PCRegister.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/PCmux.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/PCandIR_Concatenate.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/PCALU.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/IRLeftShift1ForPC.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/FullSubsystem.vf" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/Subsystem2Test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PCALU
+Compiling module PCMux
+Compiling module PCRegister
+Compiling module PCandIR_Concatenate
+Compiling module IRLeftShift1ForPC
+Compiling module FullSubsystem
+Compiling module FullSubsystem_FullSubsystem_sch_...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/Subsystem2/FullSubsystem_FullSubsystem_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28848 KB
+Fuse CPU Usage: 250 ms

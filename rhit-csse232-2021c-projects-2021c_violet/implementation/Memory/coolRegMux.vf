@@ -1,0 +1,253 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : coolRegMux.vf
+// /___/   /\     Timestamp : 05/21/2021 10:30:41
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/ipcore_dir -intstyle ise -family spartan3e -verilog C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegMux.vf -w C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegMux.sch
+//Design Name: coolRegMux
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_coolRegMux(D0, 
+                                D1, 
+                                E, 
+                                S0, 
+                                O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_coolRegMux(D0, 
+                                D1, 
+                                D2, 
+                                D3, 
+                                E, 
+                                S0, 
+                                S1, 
+                                O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_coolRegMux  I_M01 (.D0(D0), 
+                                   .D1(D1), 
+                                   .E(E), 
+                                   .S0(S0), 
+                                   .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_coolRegMux  I_M23 (.D0(D2), 
+                                   .D1(D3), 
+                                   .E(E), 
+                                   .S0(S0), 
+                                   .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module coolRegMux(A, 
+                  B, 
+                  C, 
+                  D, 
+                  S, 
+                  O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [15:0] D;
+    input [1:0] S;
+   output [15:0] O;
+   
+   wire V;
+   
+   VCC  XLXI_86 (.P(V));
+   (* HU_SET = "XLXI_87_2" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_87 (.D0(A[0]), 
+                                     .D1(B[0]), 
+                                     .D2(C[0]), 
+                                     .D3(D[0]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[0]));
+   (* HU_SET = "XLXI_89_3" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_89 (.D0(A[1]), 
+                                     .D1(B[1]), 
+                                     .D2(C[1]), 
+                                     .D3(D[1]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[1]));
+   (* HU_SET = "XLXI_91_4" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_91 (.D0(A[2]), 
+                                     .D1(B[2]), 
+                                     .D2(C[2]), 
+                                     .D3(D[2]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[2]));
+   (* HU_SET = "XLXI_93_5" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_93 (.D0(A[3]), 
+                                     .D1(B[3]), 
+                                     .D2(C[3]), 
+                                     .D3(D[3]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[3]));
+   (* HU_SET = "XLXI_94_6" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_94 (.D0(A[4]), 
+                                     .D1(B[4]), 
+                                     .D2(C[4]), 
+                                     .D3(D[4]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[4]));
+   (* HU_SET = "XLXI_95_7" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_95 (.D0(A[5]), 
+                                     .D1(B[5]), 
+                                     .D2(C[5]), 
+                                     .D3(D[5]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[5]));
+   (* HU_SET = "XLXI_96_8" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_96 (.D0(A[6]), 
+                                     .D1(B[6]), 
+                                     .D2(C[6]), 
+                                     .D3(D[6]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[6]));
+   (* HU_SET = "XLXI_97_9" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_97 (.D0(A[7]), 
+                                     .D1(B[7]), 
+                                     .D2(C[7]), 
+                                     .D3(D[7]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[7]));
+   (* HU_SET = "XLXI_98_10" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_98 (.D0(A[8]), 
+                                     .D1(B[8]), 
+                                     .D2(C[8]), 
+                                     .D3(D[8]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[8]));
+   (* HU_SET = "XLXI_99_11" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_99 (.D0(A[9]), 
+                                     .D1(B[9]), 
+                                     .D2(C[9]), 
+                                     .D3(D[9]), 
+                                     .E(V), 
+                                     .S0(S[0]), 
+                                     .S1(S[1]), 
+                                     .O(O[9]));
+   (* HU_SET = "XLXI_101_12" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_101 (.D0(A[10]), 
+                                      .D1(B[10]), 
+                                      .D2(C[10]), 
+                                      .D3(D[10]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[10]));
+   (* HU_SET = "XLXI_102_13" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_102 (.D0(A[11]), 
+                                      .D1(B[11]), 
+                                      .D2(C[11]), 
+                                      .D3(D[11]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[11]));
+   (* HU_SET = "XLXI_104_14" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_104 (.D0(A[12]), 
+                                      .D1(B[12]), 
+                                      .D2(C[12]), 
+                                      .D3(D[12]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[12]));
+   (* HU_SET = "XLXI_105_15" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_105 (.D0(A[13]), 
+                                      .D1(B[13]), 
+                                      .D2(C[13]), 
+                                      .D3(D[13]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[13]));
+   (* HU_SET = "XLXI_106_16" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_106 (.D0(A[14]), 
+                                      .D1(B[14]), 
+                                      .D2(C[14]), 
+                                      .D3(D[14]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[14]));
+   (* HU_SET = "XLXI_107_17" *) 
+   M4_1E_MXILINX_coolRegMux  XLXI_107 (.D0(A[15]), 
+                                      .D1(B[15]), 
+                                      .D2(C[15]), 
+                                      .D3(D[15]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[15]));
+endmodule

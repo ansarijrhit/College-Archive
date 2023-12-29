@@ -1,0 +1,464 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : coolRegFile.vf
+// /___/   /\     Timestamp : 05/21/2021 10:30:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/ipcore_dir -intstyle ise -family spartan3e -verilog C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegFile.vf -w C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegFile.sch
+//Design Name: coolRegFile
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_coolRegFile(D0, 
+                                 D1, 
+                                 E, 
+                                 S0, 
+                                 O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_coolRegFile(D0, 
+                                 D1, 
+                                 D2, 
+                                 D3, 
+                                 E, 
+                                 S0, 
+                                 S1, 
+                                 O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_112" *) 
+   M2_1E_MXILINX_coolRegFile  I_M01 (.D0(D0), 
+                                    .D1(D1), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .O(M01));
+   (* HU_SET = "I_M23_111" *) 
+   M2_1E_MXILINX_coolRegFile  I_M23 (.D0(D2), 
+                                    .D1(D3), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module coolRegMux_MUSER_coolRegFile(A, 
+                                    B, 
+                                    C, 
+                                    D, 
+                                    S, 
+                                    O);
+
+    input [15:0] A;
+    input [15:0] B;
+    input [15:0] C;
+    input [15:0] D;
+    input [1:0] S;
+   output [15:0] O;
+   
+   wire V;
+   
+   VCC  XLXI_86 (.P(V));
+   (* HU_SET = "XLXI_87_113" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_87 (.D0(A[0]), 
+                                      .D1(B[0]), 
+                                      .D2(C[0]), 
+                                      .D3(D[0]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[0]));
+   (* HU_SET = "XLXI_89_114" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_89 (.D0(A[1]), 
+                                      .D1(B[1]), 
+                                      .D2(C[1]), 
+                                      .D3(D[1]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[1]));
+   (* HU_SET = "XLXI_91_115" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_91 (.D0(A[2]), 
+                                      .D1(B[2]), 
+                                      .D2(C[2]), 
+                                      .D3(D[2]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[2]));
+   (* HU_SET = "XLXI_93_116" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_93 (.D0(A[3]), 
+                                      .D1(B[3]), 
+                                      .D2(C[3]), 
+                                      .D3(D[3]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[3]));
+   (* HU_SET = "XLXI_94_117" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_94 (.D0(A[4]), 
+                                      .D1(B[4]), 
+                                      .D2(C[4]), 
+                                      .D3(D[4]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[4]));
+   (* HU_SET = "XLXI_95_118" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_95 (.D0(A[5]), 
+                                      .D1(B[5]), 
+                                      .D2(C[5]), 
+                                      .D3(D[5]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[5]));
+   (* HU_SET = "XLXI_96_119" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_96 (.D0(A[6]), 
+                                      .D1(B[6]), 
+                                      .D2(C[6]), 
+                                      .D3(D[6]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[6]));
+   (* HU_SET = "XLXI_97_120" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_97 (.D0(A[7]), 
+                                      .D1(B[7]), 
+                                      .D2(C[7]), 
+                                      .D3(D[7]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[7]));
+   (* HU_SET = "XLXI_98_121" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_98 (.D0(A[8]), 
+                                      .D1(B[8]), 
+                                      .D2(C[8]), 
+                                      .D3(D[8]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[8]));
+   (* HU_SET = "XLXI_99_122" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_99 (.D0(A[9]), 
+                                      .D1(B[9]), 
+                                      .D2(C[9]), 
+                                      .D3(D[9]), 
+                                      .E(V), 
+                                      .S0(S[0]), 
+                                      .S1(S[1]), 
+                                      .O(O[9]));
+   (* HU_SET = "XLXI_101_123" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_101 (.D0(A[10]), 
+                                       .D1(B[10]), 
+                                       .D2(C[10]), 
+                                       .D3(D[10]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[10]));
+   (* HU_SET = "XLXI_102_124" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_102 (.D0(A[11]), 
+                                       .D1(B[11]), 
+                                       .D2(C[11]), 
+                                       .D3(D[11]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[11]));
+   (* HU_SET = "XLXI_104_125" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_104 (.D0(A[12]), 
+                                       .D1(B[12]), 
+                                       .D2(C[12]), 
+                                       .D3(D[12]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[12]));
+   (* HU_SET = "XLXI_105_126" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_105 (.D0(A[13]), 
+                                       .D1(B[13]), 
+                                       .D2(C[13]), 
+                                       .D3(D[13]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[13]));
+   (* HU_SET = "XLXI_106_127" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_106 (.D0(A[14]), 
+                                       .D1(B[14]), 
+                                       .D2(C[14]), 
+                                       .D3(D[14]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[14]));
+   (* HU_SET = "XLXI_107_128" *) 
+   M4_1E_MXILINX_coolRegFile  XLXI_107 (.D0(A[15]), 
+                                       .D1(B[15]), 
+                                       .D2(C[15]), 
+                                       .D3(D[15]), 
+                                       .E(V), 
+                                       .S0(S[0]), 
+                                       .S1(S[1]), 
+                                       .O(O[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module decode2b4_MUSER_coolRegFile(A, 
+                                   enable, 
+                                   O0, 
+                                   O1, 
+                                   O2, 
+                                   O3);
+
+    input [1:0] A;
+    input enable;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   wire nA0;
+   wire nA1;
+   
+   INV  XLXI_1 (.I(A[0]), 
+               .O(nA0));
+   INV  XLXI_6 (.I(A[1]), 
+               .O(nA1));
+   AND3  XLXI_15 (.I0(enable), 
+                 .I1(A[1]), 
+                 .I2(A[0]), 
+                 .O(O3));
+   AND3  XLXI_16 (.I0(enable), 
+                 .I1(A[1]), 
+                 .I2(nA0), 
+                 .O(O2));
+   AND3  XLXI_17 (.I0(enable), 
+                 .I1(nA1), 
+                 .I2(A[0]), 
+                 .O(O1));
+   AND3  XLXI_18 (.I0(enable), 
+                 .I1(nA1), 
+                 .I2(nA0), 
+                 .O(O0));
+endmodule
+`timescale 1ns / 1ps
+
+module FD16RE_MXILINX_coolRegFile(C, 
+                                  CE, 
+                                  D, 
+                                  R, 
+                                  Q);
+
+    input C;
+    input CE;
+    input [15:0] D;
+    input R;
+   output [15:0] Q;
+   
+   
+   FDRE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .D(D[0]), 
+              .R(R), 
+              .Q(Q[0]));
+   FDRE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .D(D[1]), 
+              .R(R), 
+              .Q(Q[1]));
+   FDRE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .D(D[2]), 
+              .R(R), 
+              .Q(Q[2]));
+   FDRE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .D(D[3]), 
+              .R(R), 
+              .Q(Q[3]));
+   FDRE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .D(D[4]), 
+              .R(R), 
+              .Q(Q[4]));
+   FDRE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .D(D[5]), 
+              .R(R), 
+              .Q(Q[5]));
+   FDRE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .D(D[6]), 
+              .R(R), 
+              .Q(Q[6]));
+   FDRE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .D(D[7]), 
+              .R(R), 
+              .Q(Q[7]));
+   FDRE #( .INIT(1'b0) ) I_Q8 (.C(C), 
+              .CE(CE), 
+              .D(D[8]), 
+              .R(R), 
+              .Q(Q[8]));
+   FDRE #( .INIT(1'b0) ) I_Q9 (.C(C), 
+              .CE(CE), 
+              .D(D[9]), 
+              .R(R), 
+              .Q(Q[9]));
+   FDRE #( .INIT(1'b0) ) I_Q10 (.C(C), 
+               .CE(CE), 
+               .D(D[10]), 
+               .R(R), 
+               .Q(Q[10]));
+   FDRE #( .INIT(1'b0) ) I_Q11 (.C(C), 
+               .CE(CE), 
+               .D(D[11]), 
+               .R(R), 
+               .Q(Q[11]));
+   FDRE #( .INIT(1'b0) ) I_Q12 (.C(C), 
+               .CE(CE), 
+               .D(D[12]), 
+               .R(R), 
+               .Q(Q[12]));
+   FDRE #( .INIT(1'b0) ) I_Q13 (.C(C), 
+               .CE(CE), 
+               .D(D[13]), 
+               .R(R), 
+               .Q(Q[13]));
+   FDRE #( .INIT(1'b0) ) I_Q14 (.C(C), 
+               .CE(CE), 
+               .D(D[14]), 
+               .R(R), 
+               .Q(Q[14]));
+   FDRE #( .INIT(1'b0) ) I_Q15 (.C(C), 
+               .CE(CE), 
+               .D(D[15]), 
+               .R(R), 
+               .Q(Q[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module coolRegFile(CLK, 
+                   CrAddr, 
+                   CRW, 
+                   DataIn, 
+                   Reset, 
+                   SetID, 
+                   CoolData);
+
+    input CLK;
+    input [1:0] CrAddr;
+    input CRW;
+    input [15:0] DataIn;
+    input Reset;
+    input SetID;
+   output [15:0] CoolData;
+   
+   wire [15:0] A;
+   wire [15:0] B;
+   wire [15:0] C;
+   wire [1:0] CurCool;
+   wire [15:0] D;
+   wire XLXN_143;
+   wire XLXN_145;
+   wire XLXN_146;
+   wire XLXN_148;
+   
+   (* HU_SET = "XLXI_54_129" *) 
+   FD16RE_MXILINX_coolRegFile  XLXI_54 (.C(CLK), 
+                                       .CE(XLXN_143), 
+                                       .D(DataIn[15:0]), 
+                                       .R(Reset), 
+                                       .Q(A[15:0]));
+   (* HU_SET = "XLXI_55_130" *) 
+   FD16RE_MXILINX_coolRegFile  XLXI_55 (.C(CLK), 
+                                       .CE(XLXN_145), 
+                                       .D(DataIn[15:0]), 
+                                       .R(Reset), 
+                                       .Q(B[15:0]));
+   (* HU_SET = "XLXI_56_131" *) 
+   FD16RE_MXILINX_coolRegFile  XLXI_56 (.C(CLK), 
+                                       .CE(XLXN_146), 
+                                       .D(DataIn[15:0]), 
+                                       .R(Reset), 
+                                       .Q(C[15:0]));
+   (* HU_SET = "XLXI_57_132" *) 
+   FD16RE_MXILINX_coolRegFile  XLXI_57 (.C(CLK), 
+                                       .CE(XLXN_148), 
+                                       .D(DataIn[15:0]), 
+                                       .R(Reset), 
+                                       .Q(D[15:0]));
+   decode2b4_MUSER_coolRegFile  XLXI_62 (.A(CurCool[1:0]), 
+                                        .enable(CRW), 
+                                        .O0(XLXN_143), 
+                                        .O1(XLXN_145), 
+                                        .O2(XLXN_146), 
+                                        .O3(XLXN_148));
+   FDRE #( .INIT(1'b0) ) XLXI_71 (.C(CLK), 
+                 .CE(SetID), 
+                 .D(CrAddr[0]), 
+                 .R(Reset), 
+                 .Q(CurCool[0]));
+   FDRE #( .INIT(1'b0) ) XLXI_72 (.C(CLK), 
+                 .CE(SetID), 
+                 .D(CrAddr[1]), 
+                 .R(Reset), 
+                 .Q(CurCool[1]));
+   coolRegMux_MUSER_coolRegFile  XLXI_75 (.A(A[15:0]), 
+                                         .B(B[15:0]), 
+                                         .C(C[15:0]), 
+                                         .D(D[15:0]), 
+                                         .S(CurCool[1:0]), 
+                                         .O(CoolData[15:0]));
+endmodule

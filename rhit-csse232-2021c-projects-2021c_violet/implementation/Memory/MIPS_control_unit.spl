@@ -1,0 +1,16 @@
+[Inputs]
+CLK
+Reset
+=Opcode[5:0]=
+[Outputs]
+ALUSrc
+MemtoReg
+RegDst
+RegWrite
+MemRead
+MemWrite
+Branch
+[BiDir]
+[ATTRIBUTES]
+VeriModel MIPS_control_unit
+

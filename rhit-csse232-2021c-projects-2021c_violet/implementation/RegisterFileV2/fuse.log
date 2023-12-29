@@ -1,0 +1,27 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2_RegisterFileV2_sch_tb_isim_beh.exe -prj C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2_RegisterFileV2_sch_tb_beh.prj work.RegisterFileV2_RegisterFileV2_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2Mux.v" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2Decoder.vf" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2.vf" into library work
+Analyzing Verilog file "C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2Test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module INV
+Compiling module AND5
+Compiling module RegisterFileV2Decoder_MUSER_Regi...
+Compiling module RegisterFileV2Mux
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_RegisterFileV2
+Compiling module GND
+Compiling module RegisterFileV2
+Compiling module RegisterFileV2_RegisterFileV2_sc...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 10 Verilog Units
+Built simulation executable C:/Users/hunte/Desktop/CSSE232/rhit-csse232-2021c-projects-2021c_violet/implementation/RegisterFileV2/RegisterFileV2_RegisterFileV2_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28924 KB
+Fuse CPU Usage: 265 ms

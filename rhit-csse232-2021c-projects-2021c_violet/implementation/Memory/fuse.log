@@ -1,0 +1,76 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemSchm_FullSystemSchm_sch_tb_isim_beh.exe -prj C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemSchm_FullSystemSchm_sch_tb_beh.prj work.FullSystemSchm_FullSystemSchm_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/RegisterFileV2Mux.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/RegisterFileV2Decoder.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/decode2b4.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegMux.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/TwoBitMuxCode.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/SignExtender.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/RegisterFileV2.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/PCRegister.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/PCmux.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/PCandIR_Concatenate.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/PCALU.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/OneBitMux.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/LeftShifter.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/IRLeftShift1ForPC.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/IRCodeForSchm.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/CycleCounter.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/coolRegFile.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/Control.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/blk_mem_gen_v6_3.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/ALUCodeScm.v" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemSchm.vf" into library work
+Analyzing Verilog file "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemTest.v" Line 57: Size mismatch in connection of port <Cycles>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemSchm.vf" Line 829: Size mismatch in connection of port <CycleCount>. Formal port size is 32-bit while actual signal size is 16-bit.
+Completed static elaboration
+Compiling module FDRE
+Compiling module FD16RE_MXILINX_FullSystemSchm
+Compiling module INV
+Compiling module AND3
+Compiling module decode2b4_MUSER_FullSystemSchm
+Compiling module VCC
+Compiling module AND3B1
+Compiling module OR2
+Compiling module M2_1E_MXILINX_FullSystemSchm
+Compiling module MUXF5
+Compiling module M4_1E_MXILINX_FullSystemSchm
+Compiling module coolRegMux_MUSER_FullSystemSchm
+Compiling module coolRegFile_MUSER_FullSystemSchm
+Compiling module SignExtender
+Compiling module IRCodeForSchm
+Compiling module AND5
+Compiling module RegisterFileV2Decoder_MUSER_Full...
+Compiling module RegisterFileV2Mux
+Compiling module RegisterFileV2_MUSER_FullSystemS...
+Compiling module TwoBitMuxCode
+Compiling module ALUCodeScm
+Compiling module LeftShifter
+Compiling module PCALU
+Compiling module PCMux
+Compiling module PCRegister
+Compiling module PCandIR_Concatenate
+Compiling module IRLeftShift1ForPC
+Compiling module Control
+Compiling module OneBitMux
+Compiling module CycleCounter
+Compiling module BLK_MEM_GEN_V6_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V6_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V6_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V6_3(C_FAMILY="spart...
+Compiling module blk_mem_gen_v6_3
+Compiling module FullSystemSchm
+Compiling module FullSystemSchm_FullSystemSchm_sc...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 38 Verilog Units
+Built simulation executable C:/Users/bartheic/Desktop/rhit-csse232-2021c-projects-2021c_violet/implementation/Memory/FullSystemSchm_FullSystemSchm_sch_tb_isim_beh.exe
+Fuse Memory Usage: 34744 KB
+Fuse CPU Usage: 749 ms

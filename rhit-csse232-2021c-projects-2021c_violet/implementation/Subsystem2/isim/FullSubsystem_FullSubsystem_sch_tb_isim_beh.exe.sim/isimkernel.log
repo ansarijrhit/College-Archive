@@ -1,0 +1,28 @@
+Command line:
+   FullSubsystem_FullSubsystem_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60541
+
+Mon May 17 22:50:20 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5629.31 Meg
+
+ Total Signals          : 39
+ Total Nets             : 141
+ Total Signal Drivers   : 17
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 23
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 317
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5629.31 Meg
+
+Mon May 17 22:50:23 2021
+
